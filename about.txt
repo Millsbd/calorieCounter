@@ -1,0 +1,27 @@
+Calorie Counter:
+
+HTML:
+Basic boilerplate with title / h1
+Div container for the counter logic
+Labels, forms, inputs, fieldsets, selects, and buttons to take the actions of the user and deal with them
+Another hidden div below counter div to display the results after user entry
+
+CSS:
+Root: is a way to name a set of colors you plan to reuse throughout the doc simple names instead of reusing their codes
+
+JS:
+Create variables using the DOM and document.getElementById(‘ ‘) for all the buttons and inputs
+Create a global error variable(??)
+Clean input function using regular expression to remove all +,- and spaces using the replace method. Similar for is valid input to make sure it is not a scientific number. 
+
+Add entry, when the add entry button is pressed it creates input fields to enter the name of the food and associated calories. 
+Calculate calories function useds the event object e to prevent default as this is going to be used on a submit press and this will prevent the page from refreshing. 
+Creates variables for all the numerical entries which will create a list (array like object) which can be passed into the to getCaloriesFromInputs function to get the cal numbers in accessible format. 
+Creates 3 variables for consumed calories, remaining calories, and calculates whether the state is surplus or deficit. 
+Creates the html to show this and adds it to the output div and unhides it so results are displayed. 
+getCaloriesFromInputs function designed to run on array / array-like objects which is the format of the inputs in the calculate calories function. 
+Uses a for loop to check the entries and make sure they are formatted correctly, throws an alert of an error if they are not. 
+
+clearForm function selects all the inputs and puts them in an array. Then runs a for loop on this array erasing all of the html from user inputs. 
+Resets budget and hides all output info
+addEventListeners for buttons to call the associated functions when the buttons are clicked. 
